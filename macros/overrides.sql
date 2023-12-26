@@ -29,7 +29,7 @@
 {% endmacro %}
 
 {% macro running_unit_test() %}
-  {{ return ('unit-test' in config.get('tags', {})) }}
+  {{ return ('mock-test' in config.get('tags', {})) }}
 {% endmacro %}
 
 {% macro setup_project_and_model_name(project_or_package, model_name) %}
